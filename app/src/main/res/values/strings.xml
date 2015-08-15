@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ConferenceApp</string>
+
+    <string name="title_section1">Conference</string>
+    <string name="title_section2">My Agenda</string>
+    <string name="title_section3">Location</string>
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Clear My Agenda</string>
+</resources>
