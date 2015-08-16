@@ -133,6 +133,27 @@ public class ConferenceAgenda extends ActionBarActivity implements ActionBar.Tab
         AlertDialog helpDialog = helpBuilder.create();
         helpDialog.show();
     }
+
+    public void showDetailsAndRemoveFromMyAgenda(View mView){
+
+        TextView textView = (TextView) mView;
+
+        AlertDialog.Builder helpBuilder = new AlertDialog.Builder(this);
+        helpBuilder.setTitle(textView.getText().toString());
+        helpBuilder.setMessage(textView.getText().toString());
+        helpBuilder.setPositiveButton("Remove from My Agenda",
+                new DialogInterface.OnClickListener() {
+
+                    public void onClick(DialogInterface dialog, int which) {
+                        // Do nothing but close the dialog
+                    }
+                });
+
+        // Remember, create doesn't show the dialog
+        AlertDialog helpDialog = helpBuilder.create();
+        helpDialog.show();
+    }
+
     /**
      * A {@link FragmentPagerAdapter} that returns a fragment corresponding to
      * one of the sections/tabs/pages.
